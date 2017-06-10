@@ -10,3 +10,7 @@ month = int(input('Plase write month!'))
 day = int(input('Plase write day!'))
 year = int(input('Plase write year!'))
 
+if day*month==year:
+    print('Day is magic! ')
+else:
+    print('Day is not magic!')
