@@ -10,6 +10,8 @@ many seconds.
 greater than or equal to 86,400, the program should display the number of days in that
 many seconds.'''
 
+
+# Still needs to work on it. Some bug exist
 seconds = int(input('Input the seconds! '))
 
 minutes = 0
