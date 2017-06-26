@@ -10,5 +10,5 @@ def insurance_house():
     replacement_cost = float(input('What is the minimum cost of building? '))
     return replacement_cost*0.8
 
-print(insurance_house(), " $ is minimum amount you should buy for your property! ")
+print(insurance_house(), " $ is minimum amount of insurance you should buy for your property to cover everything! ")
 
