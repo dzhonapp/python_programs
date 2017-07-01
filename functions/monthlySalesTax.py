@@ -10,3 +10,9 @@ following:
 • The total sales tax (county plus state)
 '''
 
+stateSaleTax = 0.05
+countySaleTax = 0.025
+totalSalesMonth = float(input('What is total sales for the month? '))
+print("County Sales tax: $", totalSalesMonth*countySaleTax)
+print("State sales tax: $", totalSalesMonth*stateSaleTax)
+print('Total tax amount', totalSalesMonth*countySaleTax+totalSalesMonth*stateSaleTax)
