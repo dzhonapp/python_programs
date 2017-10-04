@@ -25,6 +25,9 @@ flag = True
 while flag:
     print("Would you like to play Rock, Paper, Scissors Game?  Y/N")
     game_begin= input().upper()
+    if game_begin == "N":
+        flag = False
+        break;
     computer_choice = random.randint(1,4)
     print("Make your choice! Rock, Scissor or Paper, You can type R,P or S")
     user_choice = input().upper()
@@ -38,7 +41,7 @@ while flag:
     else:
         user_choice = 3
     if computer_choice == user_choice:
-        print("Game is TIE, Play Again  Y/N")
+        print("Game is TIE!")
         continue
     if computer_choice == 1:
         if user_choice == 2:
@@ -60,8 +63,7 @@ while flag:
             continue
         else:
             print("Computer won, Scissor cuts the paper!")
-    if game_begin == "N":
-        flag = False
+
 
 
 
