@@ -25,3 +25,46 @@ flag = True
 while flag:
     print("Would you like to play Rock, Paper, Scissors Game?  Y/N")
     game_begin= input().upper()
+    computer_choice = random.randint(1,4)
+    print("Make your choice! Rock, Scissor or Paper, You can type R,P or S")
+    user_choice = input().upper()
+    while (user_choice not in "P, R, S" or user_choice not in "PAPER, ROCK, SCISSOR"):
+        print("Please write proper answer! P for Paper, R for Rock or S for Scissor. You can write full paper, rock or sicssor!")
+        user_choice=input().upper()
+    if user_choice == "ROCK" or "R":
+        user_choice = 1
+    elif user_choice == "PAPER" or "P":
+        user_choice = 2
+    else:
+        user_choice = 3
+    if computer_choice == user_choice:
+        print("Game is TIE, Play Again  Y/N")
+        continue
+    if computer_choice == 1:
+        if user_choice == 2:
+            print("You won, Paper wraps rock! ")
+            continue
+        elif user_choice == 3:
+            print("Computer won, Rock smashes the scissor!")
+            continue
+    elif computer_choice == 2:
+        if user_choice == 1:
+            print("Computer won, Paper wraps rock! ")
+            continue
+        elif user_choice == 3:
+            print("You won, Scissor cuts the paper! ")
+            continue
+    elif computer_choice == 3:
+        if user_choice == 1:
+            print("You won, Rock smashes the scissor! ")
+            continue
+        else:
+            print("Computer won, Scissor cuts the paper!")
+    if game_begin == "N":
+        flag = False
+
+
+
+
+
+
