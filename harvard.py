@@ -26,7 +26,7 @@ def read_seq(inputfile):
     seq = seq.replace('\r', '')
     return seq
 
-
+''' Helloo'''
 
 def translate(seq):
     #'''
