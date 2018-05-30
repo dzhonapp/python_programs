@@ -27,7 +27,7 @@ def binaryToNumber(array):
 #print("".join(str([1, 2, 3, 4])))
 
 
-
+# TEST CSE
 class Customer(object):
     def __init__(self, name="", balance=0):
         self.name = name
